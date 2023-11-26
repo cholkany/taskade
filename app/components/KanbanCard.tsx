@@ -1,4 +1,6 @@
-import { Avatar, Card } from "flowbite-react";
+import { Avatar, Button, Card } from "flowbite-react";
+import { HiDotsVertical } from "react-icons/hi";
+import CardEditBtn from "./CardEditeButton";
 
 interface KanbanCardProps {
     
@@ -8,6 +10,7 @@ const KanbanCard = (props: KanbanCardProps) => {
     return (
         <div className="max-w-sm" draggable>
             <Card>
+                <CardEditBtn className="w-4 h-4 self-end"/>
                 <h5 className="text-md mb-3 text-gray-700">
                     Noteworthy technology acquisitions 2021
                 </h5>
@@ -18,20 +21,17 @@ const KanbanCard = (props: KanbanCardProps) => {
                 <div className="flex flex-row space-x-2">
                     <div className="">
                     <div className="flex flex-row items-left justify-left">
-                        <div className="flex -space-x-4 rtl:space-x-reverse mr-4">
+                        <div className="flex space-x-1 rtl:space-x-reverse mr-4">
                             <Avatar
                                 img="https://flowbite.com/docs/images/people/profile-picture-5.jpg"
-                                rounded
                                 size={"xs"}
                             />
                             <Avatar
-                                img="https://flowbite.com/docs/images/people/profile-picture-5.jpg"
-                                rounded
+                                img="https://flowbite.com/docs/images/people/profile-picture-2.jpg"
                                 size={"xs"}
                             />
                             <Avatar
-                                img="https://flowbite.com/docs/images/people/profile-picture-5.jpg"
-                                rounded
+                                img="https://flowbite.com/docs/images/people/profile-picture-1.jpg"s
                                 size={"xs"}
                             />
                         </div>
